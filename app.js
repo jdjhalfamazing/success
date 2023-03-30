@@ -32,6 +32,6 @@ function calculateScore() {
 	if (score >= 75) {
 		result.innerHTML = "Congratulations! You are successful with a score of " + score + ".";
 	} else {
-		result.innerHTML = "Sorry, you are not successful with a score of " + score + ".";
+		result.innerHTML = "Sorry, you are not successful yet. You have a score of " + score + ".";
 	}
 }

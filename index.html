@@ -2,19 +2,23 @@
 <html>
 <head>
 	<title>Success Score Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<div id="whole">
 	<h1>Success Score Calculator</h1>
 	<form id="form">
 		<label>What is your height in inches?</label><br>
-		<input type="number" id="height" name="height"><br>
+		<input type="number" id="height" name="height" placeholder="70"><br>
 		<label>What is your annual income?</label><br>
-		<input type="number" id="income" name="income"><br>
+		<input type="number" id="income" name="income" placeholder="35000"><br>
 		<label>Do you own a vehicle?</label><br>
+	
 		<input type="radio" id="vehicle-yes" name="vehicle" value="yes">
-		<label for="vehicle-yes">Yes</label>
+		<label style="display:inline" for="vehicle-yes">Yes</label>
 		<input type="radio" id="vehicle-no" name="vehicle" value="no">
-		<label for="vehicle-no">No</label><br>
+		<label style="display:inline" for="vehicle-no">No</label><br>
+	</fieldset><br>
 		<label>How would you rate your fitness level?</label><br>
 		<select id="fitness" name="fitness">
 			<option value="1">Poor</option>
@@ -28,6 +32,7 @@
 	<div id="result"></div>
 
 	<script src="app.js"></script>
+</div>
 </body>
 </html>
 
